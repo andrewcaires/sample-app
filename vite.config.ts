@@ -5,11 +5,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: [
-      {
-        find: /^@\/(.+)/,
-        replacement: resolve(__dirname, "src") + "/$1",
-      },
-    ],
+    alias: {
+      "@" : resolve(__dirname, "./src"),
+    },
   },
 });
