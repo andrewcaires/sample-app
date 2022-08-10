@@ -30,8 +30,10 @@ export const mutations: MutationTree<State> = {
   },
 };
 
+const namespaced = true;
+
 export const module: Module<State, any> = {
-  namespaced: true,
+  namespaced,
   state,
   getters,
   mutations,
