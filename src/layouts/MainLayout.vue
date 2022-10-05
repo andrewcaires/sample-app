@@ -1,9 +1,11 @@
 <template>
   <div class="text-center">
-    <nav>
+    <nav class="py-7">
       <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link>
     </nav>
-    <router-view />
+    <router-view class="intro-x" v-slot="{ Component, route }">
+      <component :is="Component" :key="route.path" />
+    </router-view>
   </div>
 </template>
 
@@ -12,8 +14,6 @@
 
 <style lang="scss">
 nav {
-  padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;

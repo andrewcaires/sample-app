@@ -1,6 +1,6 @@
 <template>
   <router-view class="intro-x" v-slot="{ Component, route }">
-    <component :is="Component" :key="route?.meta?.layout || 'none'" />
+    <component :is="Component" :key="route.path" />
   </router-view>
 </template>
 
@@ -8,4 +8,5 @@
 </script>
 
 <style lang="scss">
+
 </style>

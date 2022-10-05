@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home-view">
     <img class="w-200" alt="Vue Logo" src="@/assets/logo.png" />
     <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
   </div>
@@ -9,4 +9,5 @@
 </script>
 
 <style lang="scss" scoped>
+
 </style>
