@@ -1,7 +1,7 @@
-import ui from "@andrewcaires/ui";
+import { ui } from "@andrewcaires/ui";
 import { App } from "vue";
 
-import "@andrewcaires/ui/src/scss/index.scss";
+import "@andrewcaires/ui/dist/style.css";
 
 export const install = (app: App) => app.use(ui);
 
