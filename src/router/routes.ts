@@ -40,11 +40,4 @@ export const routes = [
   },
 ];
 
-routes.forEach((route) => {
-  const layout = route.name;
-  route.children?.forEach((route) => {
-    route.meta = { ...route.meta, layout };
-  });
-});
-
 export default routes;

@@ -1,6 +1,6 @@
 <template>
   <router-view class="intro-x" v-slot="{ Component, route }">
-    <component :is="Component" :key="route?.meta?.layout || 'none'" />
+    <component :is="Component" :key="route?.matched[0]?.name || 'none'" />
   </router-view>
 </template>
 

@@ -1,7 +1,7 @@
 import { ui } from "@andrewcaires/ui";
 import { App } from "vue";
 
-import "@andrewcaires/ui/dist/style.css";
+import "@andrewcaires/ui/style";
 
 export const install = (app: App) => app.use(ui);
 
