@@ -8,7 +8,7 @@
 
     <div class="flex justify-center">
       <ui-router-link to="/" v-slot="{ action }">
-        <ui-button color="success" @click="action">Home</ui-button>
+        <ui-button variant="success" @click="action">Home</ui-button>
       </ui-router-link>
     </div>
   </div>

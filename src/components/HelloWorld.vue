@@ -18,7 +18,7 @@
     </p>
 
     <div class="flex justify-center py-5">
-      <ui-button color="success" @click="store.dispatch('counter/add')">Count is: {{ count }}</ui-button>
+      <ui-button variant="success" @click="store.dispatch('counter/add')">Count is: {{ count }}</ui-button>
     </div>
 
     <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
