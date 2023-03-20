@@ -11,3 +11,9 @@ export const install = (app: App) => {
 };
 
 export default install;
+
+declare module "@vue/runtime-core" {
+  interface ComponentCustomProperties {
+    $fetch: Fetch;
+  }
+}
