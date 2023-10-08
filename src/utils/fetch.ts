@@ -7,13 +7,16 @@ export const fetch = new Fetch({
 });
 
 export const install = (app: App) => {
+
   app.config.globalProperties.$fetch = fetch;
 };
 
 export default install;
 
 declare module "@vue/runtime-core" {
+
   interface ComponentCustomProperties {
+
     $fetch: Fetch;
   }
 }

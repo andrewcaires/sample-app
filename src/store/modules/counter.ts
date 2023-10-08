@@ -10,9 +10,11 @@ const state: State = {
 
 const actions: ActionTree<State, any> = {
   add({ commit }) {
+
     commit("add", 1);
   },
   remove({ commit }) {
+
     commit("remove", 1);
   },
 };
@@ -23,9 +25,11 @@ const getters: GetterTree<State, any> = {
 
 const mutations: MutationTree<State> = {
   add(state, value) {
+
     state.count += value;
   },
   remove(state, value) {
+
     state.count -= value;
   },
 };

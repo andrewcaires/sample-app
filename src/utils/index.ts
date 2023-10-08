@@ -6,6 +6,7 @@ import translate from "./translate";
 import ui from "./ui";
 
 export const install = (app: App) => {
+
   app.use(cookie);
   app.use(fetch);
   app.use(translate);

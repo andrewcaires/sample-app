@@ -10,15 +10,18 @@ Translate.options({
 });
 
 export const install = (app: App) => {
-  app.config.globalProperties.$t = Translate.translate;
+
+  app.config.globalProperties.$t = Translate.to;
 };
 
-export const translate = Translate.translate;
+export const translate = Translate.to;
 
 export default install;
 
 declare module "@vue/runtime-core" {
+
   interface ComponentCustomProperties {
-    $t: typeof Translate.translate;
+
+    $t: typeof Translate.to;
   }
 }

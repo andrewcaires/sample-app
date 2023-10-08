@@ -9,12 +9,18 @@ const router = createRouter({
 });
 
 router.beforeEach((to) => {
+
   const title = to.name;
+
   if (title) {
+
     document.title = translate(title.toString()) + " - " + import.meta.env.VITE_APP_TITLE;
+
     return true;
   }
+
   document.title = import.meta.env.VITE_APP_TITLE;
+
   return true;
 });
 
