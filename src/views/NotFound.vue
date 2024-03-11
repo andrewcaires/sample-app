@@ -1,6 +1,6 @@
 <template>
   <div class="not-found text-center my-5">
-    <img class="w-200" alt="Vue Logo" src="@/assets/logo.png" />
+    <img class="w-200" alt="Vue Logo" src="@/assets/logo.svg" />
 
     <h1 class="text-center">Page not found</h1>
 

@@ -1,5 +1,5 @@
 import { ui } from "@andrewcaires/ui";
-import { App } from "vue";
+import { type App } from "vue";
 
 import "@andrewcaires/ui/style";
 

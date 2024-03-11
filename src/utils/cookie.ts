@@ -1,5 +1,5 @@
 import { Cookie } from "@andrewcaires/cookie";
-import { App } from "vue";
+import { type App } from "vue";
 
 Cookie.options({
   expires: 7 * 86400,

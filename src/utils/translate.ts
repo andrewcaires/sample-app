@@ -1,5 +1,5 @@
 import { Translate } from "@andrewcaires/translate";
-import { App } from "vue";
+import { type App } from "vue";
 
 import en from "../locales/en";
 import pt from "../locales/pt";
@@ -22,6 +22,6 @@ declare module "@vue/runtime-core" {
 
   interface ComponentCustomProperties {
 
-    $t: typeof Translate.to;
+    $t: typeof translate;
   }
 }

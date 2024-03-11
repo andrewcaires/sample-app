@@ -1,5 +1,5 @@
 import { Fetch } from "@andrewcaires/fetch";
-import { App } from "vue";
+import { type App } from "vue";
 
 export const fetch = new Fetch({
   url: import.meta.env.VITE_APP_URL,
