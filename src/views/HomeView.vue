@@ -1,10 +1,9 @@
 <template>
-  <div class="home-view">
-    <img class="w-200" alt="Vue Logo" src="@/assets/logo.png" />
-    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  </div>
+  <main>
+    <TheWelcome />
+  </main>
 </template>
 
-<script lang="ts" setup></script>
-
-<style lang="scss" scoped></style>
+<script setup lang="ts">
+import TheWelcome from "../components/TheWelcome.vue";
+</script>

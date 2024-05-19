@@ -1,52 +1,42 @@
 <template>
-  <div>
-    <h1>{{ msg }}</h1>
-
-    <p>
-      Recommended IDE setup:
-      <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
-      +
-      <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    </p>
-
-    <p>See <code>README.md</code> for more information.</p>
-
-    <p>
-      <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Docs</a>
-      |
-      <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-    </p>
-
-    <div class="flex justify-center py-5">
-      <ui-button variant="success" @click="store.dispatch('counter/add')">Count is: {{ count }}</ui-button>
-    </div>
-
-    <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
+  <div class="greetings">
+    <h1 class="green">{{ msg }}</h1>
+    <h3>
+      You’ve successfully created a project with
+      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
+      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
+    </h3>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { computed } from "vue";
-import { useStore } from "vuex";
-
 defineProps({
   msg: { type: String, default: "" },
 });
-
-const store = useStore();
-
-const count = computed(() => store.state.counter.count);
 </script>
 
 <style lang="scss" scoped>
-a {
-  color: #42b983;
+h1 {
+  font-weight: 500;
+  font-size: 2.6rem;
+  position: relative;
+  top: -10px;
 }
 
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
+h3 {
+  font-size: 1.2rem;
+}
+
+.greetings h1,
+.greetings h3 {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+
+  .greetings h1,
+  .greetings h3 {
+    text-align: left;
+  }
 }
 </style>
