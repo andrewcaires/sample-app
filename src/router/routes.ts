@@ -1,10 +1,10 @@
-import CleanLayout from "../layouts/CleanLayout.vue";
-import MainLayout from "../layouts/MainLayout.vue";
+import CleanLayout from "@/layouts/CleanLayout.vue";
+import MainLayout from "@/layouts/MainLayout.vue";
 
-import AboutView from "../views/AboutView.vue";
-import HomeView from "../views/HomeView.vue";
+import AboutView from "@/views/AboutView.vue";
+import HomeView from "@/views/HomeView.vue";
 
-import NotFound from "../views/NotFound.vue";
+import NotFound from "@/views/NotFound.vue";
 
 export const routes = [
   {

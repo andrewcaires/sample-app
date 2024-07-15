@@ -6,11 +6,11 @@
 
     <p class="text-center mb-5">It's look like this page doesn't exist anymore or your link is wrong...</p>
 
-    <div class="flex justify-center">
+    <ui-flex justify="center">
       <ui-router-link to="/" v-slot="{ action }">
         <ui-button variant="success" @click="action">Home</ui-button>
       </ui-router-link>
-    </div>
+    </ui-flex>
   </div>
 </template>
 
