@@ -5,8 +5,10 @@ import en from "../locales/en";
 import pt from "../locales/pt";
 
 Translate.options({
+
   locale: "pt",
   locales: { en, pt },
+
 });
 
 export const install = (app: App) => {
