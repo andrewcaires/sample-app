@@ -5,13 +5,14 @@ import fetch from "./fetch";
 import translate from "./translate";
 import ui from "./ui";
 
-export const install = (app: App) => {
+export const install = (app: App): void => [
 
-  app.use(cookie);
-  app.use(fetch);
-  app.use(translate);
-  app.use(ui);
-};
+  cookie,
+  fetch,
+  translate,
+  ui,
+
+].forEach((value) => app.use(value));
 
 export * from "./cookie";
 export * from "./fetch";
