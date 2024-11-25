@@ -39,5 +39,3 @@ export const routes = [
     meta: {},
   },
 ];
-
-export default routes;
